@@ -1,5 +1,5 @@
 FROM ubuntu
-MAINTAINER Marcel de Graaf <mail@marceldegraaf.net>
+MAINTAINER Sigismond McLaughlin <smclaughlin@medullan.com>
 
 # Install Nginx
 RUN apt-get update
