@@ -2,6 +2,7 @@
 Description=nginx
 
 [Service]
+TimeoutStartSec=4m
 EnvironmentFile=/etc/environment
 ExecStartPre=/usr/bin/docker pull sinistersig/nginx-poc
 ExecStart=/usr/bin/docker run --rm --name nginx -p 80:80 -e "HOST_IP=${COREOS_PRIVATE_IPV4}" sinistersig/nginx-poc
